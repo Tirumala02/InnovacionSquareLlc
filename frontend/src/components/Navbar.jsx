@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 
-import logo from '../assets/logo.webp'
+import logo from '../assets/logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +17,7 @@ const Navbar = () => {
               <Link to="/">
                 <motion.img
                   src={logo}
-                  alt="Innovacion Square LLC"
+                  alt="Raqid Alafia"
                   className="h-20 w-auto"
                 />
               </Link>

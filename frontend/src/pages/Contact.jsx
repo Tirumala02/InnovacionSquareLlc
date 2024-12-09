@@ -31,7 +31,7 @@ export default function Contact() {
     const formObject = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch('http://localhost:5000/send-message', {
+      const response = await fetch('https://innovacionsquarellc.onrender.com/send-message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formObject),

@@ -1,14 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-
+import logo from '../assets/logo.png'
 const Footer = () => {
   return (
     <footer className="bg-primary text-white">
       <div className="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Innovacion Square LLC</h3>
+          <div>   
+            <image src={logo}></image>
+            <h3 className="text-lg font-semibold mb-4">Raqid Alafia</h3>
             <p className="text-sm">Utilizing your health vitals data efficiently</p>
           </div>
           <div>
@@ -29,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p className="text-sm">&copy; {new Date().getFullYear()} Innovacion Square LLC. All rights reserved.</p>
+          <p className="text-sm">&copy; {new Date().getFullYear()} Raqid Alafia. All rights reserved.</p>
         </div>
       </div>
     </footer>

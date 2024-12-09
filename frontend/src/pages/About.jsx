@@ -26,9 +26,9 @@ export default function About() {
         variants={staggerChildren}
         className="px-4 py-6 sm:px-0"
       >
-        <motion.h1 variants={fadeIn} className="text-4xl font-bold text-primary mb-4">About Innovacion Square LLC</motion.h1>
+        <motion.h1 variants={fadeIn} className="text-4xl font-bold text-primary mb-4">About Raqid Alafia</motion.h1>
         <motion.p variants={fadeIn} className="text-xl text-gray-700 mb-6">
-          At Innovacion Square LLC, we're pioneering the future of health monitoring. Our solution offers a non-invasive, AI-driven health monitoring tool that uses cutting-edge technologies like photoplethysmography (PPG) to provide precise, real-time health insights.
+          At Raqid Alafia, we're pioneering the future of health monitoring. Our solution offers a non-invasive, AI-driven health monitoring tool that uses cutting-edge technologies like photoplethysmography (PPG) to provide precise, real-time health insights.
         </motion.p>
 
         <motion.div variants={fadeIn} className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-tertiary mb-8">
