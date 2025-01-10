@@ -23,9 +23,8 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <p className="text-sm mb-2">Ms Dipti: +971 529986307</p>
-            <p className="text-sm mb-2">Email: dipti.h@innovacion-sq.com</p>
+            <h3 className="text-lg font-semibold mb-4">For queries please contact</h3>
+            <p className="text-sm mb-2">Email: Reach-admin@raqibalafia.com</p>
             <p className="text-sm">Office 246, Infinity Business Center, Barsha Business Center, Al Barsha 1, Dubai, UAE</p>
           </div>
         </div>

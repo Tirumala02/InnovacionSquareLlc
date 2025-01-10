@@ -91,7 +91,18 @@ export default function HealthInsights() {
         <HealthTip tip="Try to incorporate 30 minutes of moderate exercise into your daily routine to maintain your heart health and reduce stress levels." />
         <HealthTip tip="Ensure you're staying hydrated by drinking at least 8 glasses of water per day. This can help improve your overall health and energy levels." />
       </div>
+
+      <motion.div 
+        className="bg-blue-50 p-6 rounded-lg shadow-md mt-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h3 className="text-xl font-semibold mb-4">Consult for Tailor-Made Solutions</h3>
+        <p className="text-sm text-gray-700">
+          Consult doctors, fitness coaches, and nutrition experts for personalized solutions tailored to your unique health needs. Whether you're aiming for improved fitness, managing chronic conditions, or optimizing your wellness, expert guidance can make a significant difference in achieving your health goals.
+        </p>
+      </motion.div>
     </div>
   )
 }
-

@@ -30,87 +30,99 @@ export default function Home() {
         animate="animate"
         variants={staggerChildren}
         className="px-4 py-6 sm:px-0"
-      >
-        <div className=' '>
+      ><div className="relative">
           <motion.div variants={fadeIn} className="relative">
-            <img src={hero} alt="Hero" className="w-full h-96 md:h-dvh object-cover rounded-lg shadow-lg" />
-            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
-              <motion.h1
-                className=" text-2xl md:text-4xl font-bold mb-4 text-center"
+            <img
+              src={hero}
+              alt="Hero"
+              className="w-full h-96 md:h-dvh object-cover rounded-lg shadow-lg"
+            />
+            {/* Video Background
+            <video
+              src="your-video-url.mp4"
+              autoPlay
+              loop
+              muted
+              className="w-full h-96 md:h-dvh object-cover rounded-lg shadow-lg"
+            /> */}
+
+
+            {/* Full Height Text Section */}
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-center p-6">
+              <motion.h2
+                className="text-3xl md:text-4xl font-bold text-white mb-6"
                 variants={fadeIn}
               >
-                {/* UTILIZING YOUR HEALTH VITALS DATA EFFICIENTLY */}
-                Take Control of Your Health with Advanced Vitals Monitoring
-              </motion.h1>
+                For Enterprises & Corporates
+              </motion.h2>
               <motion.p
-                className="text-md md:text-xl mb-6 text-center"
+                className="text-lg md:text-xl font-semibold text-gray-200 mb-6"
                 variants={fadeIn}
               >
-                {/* A non-invasive tool for your Health vitals with Risk Analysis to Plan your Fitness goals and Meals */}
-                Track your health vitals and personalize your fitness and wellness plans with real-time AI-driven insights
+                Fleet Companies, Gyms, Personal Trainers, Telemedicine, Wellness Clinics, Nutritionists
               </motion.p>
-              <motion.div
-                className="flex space-x-4"
+              <motion.p
+                className="text-md md:text-lg italic text-gray-300 mb-6"
                 variants={fadeIn}
               >
-                <Link to="/contact" className="bg-secondary text-sm md:text-normal text-white font-bold py-2 px-4 rounded hover:bg-tertiary transition duration-300">
-                  Get Started Now
-                </Link>
-                <Link to="/solution" className="bg-primary text-sm md:text-normal  text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
-                  Learn More About Our Solutions
-                </Link>
-              </motion.div>
+                <span className="font-bold text-secondary">Coming Soon</span> on all App Stores and Web Links
+              </motion.p>
+              <motion.p
+                className="text-lg md:text-xl font-medium text-gray-200 mb-6"
+                variants={fadeIn}
+              >
+                Check your Health Vitals and get your Wellness Score with a quick video selfie... Anytime, Anywhere, in a jiffy.
+              </motion.p>
+              <motion.p
+                className="text-lg md:text-xl font-medium text-gray-200 mb-6"
+                variants={fadeIn}
+              >
+                Share your Score with Doctors, Nutritionists, and Fitness Trainers. Plan your Wellness Goals with real-time insights.
+              </motion.p>
+              <motion.p
+                className="text-xl md:text-2xl font-bold text-secondary mb-6"
+                variants={fadeIn}
+              >
+                An improved Wellness Score = Efficiency
+              </motion.p>
+              <motion.h3
+                className="text-3xl md:text-4xl font-bold text-white"
+                variants={fadeIn}
+              >
+                Happy and Healthy Family
+              </motion.h3>
             </div>
           </motion.div>
         </div>
 
-        <PartnerLogos />
 
-        <div className='max-w-7xl  mx-auto "py-6 sm:px-6 lg:px-8 ' >
-          <motion.div variants={fadeIn} className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <h2 className="text-2xl font-semibold text-primary mb-4">Features Overview</h2>
-              <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Contactless AI solution for measuring and recording health vitals</li>
-                <li>Integrated with smartwatches and devices for personal goal planning</li>
-                <li>Real-time health monitoring and instant feedback</li>
-                <li>Personalized fitness and nutrition recommendations</li>
-              </ul>
-            </div>
-            <div className="grid grid-cols-2 gap-4">
-              <motion.div
-                className="bg-white p-4 rounded-lg shadow border-l-4 border-secondary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <h3 className="text-xl font-semibold mb-2 text-primary">AI-Powered</h3>
-                <p className="text-gray-600">Advanced AI analysis for accurate health insights and predictions</p>
-              </motion.div>
-              <motion.div
-                className="bg-white p-4 rounded-lg shadow border-l-4 border-tertiary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <h3 className="text-xl font-semibold mb-2 text-primary">Smart Integration</h3>
-                <p className="text-gray-600">Seamless integration with your favorite fitness devices and apps</p>
-              </motion.div>
-              <motion.div
-                className="bg-white p-4 rounded-lg shadow border-l-4 border-secondary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <h3 className="text-xl font-semibold mb-2 text-primary">Personalized Plans</h3>
-                <p className="text-gray-600">Tailored fitness and meal recommendations based on your unique health profile</p>
-              </motion.div>
-              <motion.div
-                className="bg-white p-4 rounded-lg shadow border-l-4 border-tertiary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <h3 className="text-xl font-semibold mb-2 text-primary">Real-time Monitoring</h3>
-                <p className="text-gray-600">Instant health vitals tracking and analysis for immediate insights</p>
-              </motion.div>
-            </div>
+
+        <PartnerLogos />
+        <div className="py-12 px-16 lg:px-18 mx-auto max-w-4xl">
+          <motion.div
+            variants={fadeIn}
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center justify-center"
+          >
+            <motion.div
+              className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <h3 className="text-2xl font-bold mb-4 text-primary">AI-Powered</h3>
+              <p className="text-lg text-gray-600">
+                Advanced AI analysis for accurate health insights and predictions.
+              </p>
+            </motion.div>
+            <motion.div
+              className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-secondary"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <h3 className="text-2xl font-bold mb-4 text-primary">Personalized Plans</h3>
+              <p className="text-lg text-gray-600">
+                Get access to experienced fitness trainers and nutritionists.
+              </p>
+            </motion.div>
           </motion.div>
         </div>
 

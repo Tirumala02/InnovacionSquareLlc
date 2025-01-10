@@ -36,21 +36,15 @@ export default function Solution() {
         <motion.div variants={fadeIn} className="bg-white p-6 rounded-lg shadow-lg mb-8 border-l-4 border-secondary">
           <h2 className="text-2xl font-semibold mb-4 text-primary">Photoplethysmography (PPG) Technology</h2>
           <p className="text-gray-700 mb-4">
-            Our cutting-edge solution utilizes photoplethysmography (PPG) technology to measure your health vitals accurately and non-invasively. You have two convenient options for measurement:
+            The Solution algorithm uses photoplethysmography (PPG) signal recorded from facial skin tissue (remote PPG - rPPG). </p>
+          <p className="pv-2 text-gray-700 mb-2">
+
+            The algorithm extracts real-time face video images, produces an rPPG signal, analyzes the data, and provides the end user with vital signs measurements in real-time.
           </p>
-          <motion.ol className="list-decimal list-inside space-y-2 text-gray-700 mb-4">
-            <motion.li variants={fadeIn}>Face Analysis: Our AI-powered system can analyze your facial features to derive vital health data.</motion.li>
-            <motion.li variants={fadeIn}>Finger Touch: Simply place your finger on the sensor for a quick and easy health check.</motion.li>
-          </motion.ol>
+
           <div className=' flex flex-wrap gap-10'>
             <motion.img
               src={facaAnalyssis}
-              alt="Process Illustration"
-              className="mb-4 rounded-lg shadow-lg max-w-64"
-              whileHover={{ scale: 1.05 }}
-            />
-            <motion.img
-              src={touch}
               alt="Process Illustration"
               className="mb-4 rounded-lg shadow-lg max-w-64"
               whileHover={{ scale: 1.05 }}
@@ -64,61 +58,40 @@ export default function Solution() {
           <motion.div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-tertiary" whileHover={{ scale: 1.02 }}>
             <h2 className="text-2xl font-semibold mb-4 text-primary">Integrated Features</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>Advanced AI analysis for comprehensive health data interpretation</li>
-              <li>Seamless integration with popular meal planning apps for personalized nutrition advice</li>
-              <li>Real-time health monitoring for immediate insights</li>
-              <li>Customizable alerts and notifications for health status changes</li>
+              <li>Face recognition and dashboard with weekly/monthly analytics on vitals and wellness score</li>
+              <li>For further assessment with doctors, fitness trainers, nutritionists, and more</li>
             </ul>
           </motion.div>
-          <motion.div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-secondary" whileHover={{ scale: 1.02 }}>
-            <h2 className="text-2xl font-semibold mb-4 text-primary">Key Use Cases</h2>
+
+          {/* New Card: Who Can Use */}
+          <motion.div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-tertiary" whileHover={{ scale: 1.02 }}>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">Who Can Use</h2>
             <ul className="list-disc list-inside space-y-2 text-gray-700">
-              <li>Stress management through continuous monitoring and personalized recommendations</li>
-              <li>Early inflammation detection via advanced Heart Rate Variability Analysis</li>
-              <li>Comprehensive health risk monitoring, including CRP levels and tuberculosis risk assessment</li>
-              <li>Fitness optimization based on real-time health data</li>
+              <li>Enterprises to monitor and improve wellness of the employees</li>
+              <li>Gyms and personal trainers to customize workout each time before starting workout based on vitals</li>
+              <li>Telemedicine companies and wellness clinics to have preview of the health vitals of patients</li>
             </ul>
           </motion.div>
-        </motion.div>
 
-        <motion.div variants={fadeIn} className="bg-white p-6 rounded-lg shadow-lg border-l-4 border-tertiary">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">Real-World Examples</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <motion.div whileHover={{ scale: 1.05 }}>
-              <h3 className="text-xl font-semibold text-primary mb-2">Personalized Meal Planning</h3>
-              <p className="text-gray-700">Our system analyzes your health data to provide tailored meal suggestions. For instance, if your vitals indicate high stress levels, we might recommend foods rich in vitamin C and omega-3 fatty acids to support your body's stress response.</p>
-              <motion.img
-                src={mealPlan}
-                alt="Process Illustration"
-                className="mb-4 rounded-lg shadow-lg max-w-64"
-                whileHover={{ scale: 1.02 }}
-              />
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }}>
-              <h3 className="text-xl font-semibold text-primary mb-2">Proactive Stress Management</h3>
-              <p className="text-gray-700">By monitoring your stress levels in real-time, our solution can alert you when your stress is elevating and suggest immediate relaxation techniques or schedule adjustments to maintain optimal health.</p>
-              <motion.img
-                src={stress}
-                alt="Process Illustration"
-                className="mb-4 rounded-lg shadow-lg max-w-64"
-                whileHover={{ scale: 1.02 }}
-              />
-            </motion.div>
-          </div>
+          {/* New Card: Employee Wellness Programs */}
+          <motion.div className="bg-white p-6 rounded-lg shadow-lg border-t-4 border-tertiary" whileHover={{ scale: 1.02 }}>
+            <h2 className="text-2xl font-semibold mb-4 text-primary">Employee Wellness Programs</h2>
+            <p className="text-gray-700 mb-4">
+              Employee wellness programs have the power to reduce company healthcare costs by 127% while improving productivity performance and reducing absenteeism.
+            </p>
+          </motion.div>
         </motion.div>
-
-        <motion.div
-          className="bg-white p-6 my-6 bg-gray-100 rounded-lg shadow-lg border-t-4 border-tertiary" // Tailwind classes for border and padding
-          initial={{ borderRadius: "0%", borderColor: "transparent" }} // Initial state: no border and no radius
-          animate={{ borderRadius: "16px", borderColor: "#000000" }} // Final state: rounded border with black color
-          transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition animation
-        >
-          <ImprovedRiskAnalysis />
-          <HealthInsights />
-        </motion.div>
-
       </motion.div>
-    </div>
+
+      <motion.div
+        className="bg-white p-6 my-6 bg-gray-100 rounded-lg shadow-lg border-t-4 border-tertiary" // Tailwind classes for border and padding
+        initial={{ borderRadius: "0%", borderColor: "transparent" }} // Initial state: no border and no radius
+        animate={{ borderRadius: "16px", borderColor: "#000000" }} // Final state: rounded border with black color
+        transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition animation
+      >
+        {/* <ImprovedRiskAnalysis /> */}
+        <HealthInsights />
+      </motion.div>
+    </div >
   )
 }
-
